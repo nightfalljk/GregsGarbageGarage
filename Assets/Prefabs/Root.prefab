@@ -1,0 +1,538 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6816584641351622996
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6816584641351622998}
+  - component: {fileID: 6816584641351622999}
+  - component: {fileID: 6816584641351622993}
+  - component: {fileID: 6816584641351622992}
+  - component: {fileID: 2953995416725455012}
+  - component: {fileID: 3387302579319657968}
+  m_Layer: 0
+  m_Name: Root
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 4294967295
+  m_IsActive: 1
+--- !u!4 &6816584641351622998
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6816584641351622996}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6816584641351622999
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6816584641351622996}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b83e3ecce4c41fb929952918457ad0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_camera: {fileID: 0}
+  m_handIdle: {fileID: 2800000, guid: 0af698c186f439847822a028adfb1194, type: 3}
+  m_handHover: {fileID: 2800000, guid: ebdb269335c8401489ea805360a37b82, type: 3}
+  m_handGrab: {fileID: 2800000, guid: 81cb96129cb445a409e4b57b7558ebc8, type: 3}
+  allowGrabbing: 1
+--- !u!114 &6816584641351622993
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6816584641351622996}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea2dd8b56fdd4c5fb005357309c0e8db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_spawnPoint: {x: 9, y: 0.266, z: 0}
+  m_stackPrefab: {fileID: 2831507682468454425, guid: 6219c75e9d734a740ad39d337f05a28b,
+    type: 3}
+  m_scalingSpawnChances: {fileID: 11400000, guid: 6f6a8626b2ff8dc4c9ba4d54a57a1483,
+    type: 2}
+--- !u!114 &6816584641351622992
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6816584641351622996}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 788f47d024e841f8ae2585b68c2a1615, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_dayTimeInSeconds: 40
+  m_nightTimeInSeconds: 20
+  OnDayStart:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6816584641351622993}
+        m_MethodName: OnDayStartTest
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2953995416725455012}
+        m_MethodName: ResetDailyCostAndRevenue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 3387302579319657968}
+        m_MethodName: OnDayStart
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_MethodName: UpdateDay
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_MethodName: SetTimeMorning
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0.25
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  OnDayEnd:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6816584641351622993}
+        m_MethodName: OnDayEndTest
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  OnNightStart:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6816584641351622993}
+        m_MethodName: OnNightStartTest
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_MethodName: SetTimeNight
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0.75
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  OnNightEnd:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6816584641351622993}
+        m_MethodName: OnNightEndTest
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2953995416725455012}
+        m_MethodName: GetCityPayment
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1000
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2953995416725455012}
+        m_MethodName: PayAllCosts
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 3387302579319657968}
+        m_MethodName: OnNightEnd
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_dailyEvents:
+  - Day: 1
+    Night: 1
+    OnDayStarted:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 6816584641351622993}
+          m_MethodName: SetChances
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 11400000, guid: 6459c521d14f1e84d9ab7bc5889bdd65,
+              type: 2}
+            m_ObjectArgumentAssemblyTypeName: Trash.Spawning.SpawnChances, Assembly-CSharp
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    OnDayEnded:
+      m_PersistentCalls:
+        m_Calls: []
+    OnNightStarted:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 6816584641351622993}
+          m_MethodName: SetChances
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 11400000, guid: 52758bdbabd740246b0ba943a63bb892,
+              type: 2}
+            m_ObjectArgumentAssemblyTypeName: Trash.Spawning.SpawnChances, Assembly-CSharp
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    OnNightEnded:
+      m_PersistentCalls:
+        m_Calls: []
+  - Day: 2
+    Night: 2
+    OnDayStarted:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 6816584641351622993}
+          m_MethodName: SetChances
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 11400000, guid: 92b4735a52bb7084da309f8e52185c1f,
+              type: 2}
+            m_ObjectArgumentAssemblyTypeName: Trash.Spawning.SpawnChances, Assembly-CSharp
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    OnDayEnded:
+      m_PersistentCalls:
+        m_Calls: []
+    OnNightStarted:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 6816584641351622993}
+          m_MethodName: SetChances
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 11400000, guid: e2936e35b060b3642b26aa0e574b3a6e,
+              type: 2}
+            m_ObjectArgumentAssemblyTypeName: Trash.Spawning.SpawnChances, Assembly-CSharp
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    OnNightEnded:
+      m_PersistentCalls:
+        m_Calls: []
+  - Day: 3
+    Night: 3
+    OnDayStarted:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 6816584641351622993}
+          m_MethodName: SetChances
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 11400000, guid: 74eebcb269c90c344ab7a6ef5f0dcec7,
+              type: 2}
+            m_ObjectArgumentAssemblyTypeName: Trash.Spawning.SpawnChances, Assembly-CSharp
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    OnDayEnded:
+      m_PersistentCalls:
+        m_Calls: []
+    OnNightStarted:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 6816584641351622993}
+          m_MethodName: SetChances
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 11400000, guid: c1768224324d3204d9a9526ea86535ba,
+              type: 2}
+            m_ObjectArgumentAssemblyTypeName: Trash.Spawning.SpawnChances, Assembly-CSharp
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    OnNightEnded:
+      m_PersistentCalls:
+        m_Calls: []
+  - Day: 4
+    Night: 4
+    OnDayStarted:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 6816584641351622993}
+          m_MethodName: SetChances
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 11400000, guid: b0f8777f347bb5c46b6b7539f9e822fd,
+              type: 2}
+            m_ObjectArgumentAssemblyTypeName: Trash.Spawning.SpawnChances, Assembly-CSharp
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    OnDayEnded:
+      m_PersistentCalls:
+        m_Calls: []
+    OnNightStarted:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 6816584641351622993}
+          m_MethodName: SetChances
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 11400000, guid: 3cc319ab8debb1a409b6cd5fa16837a6,
+              type: 2}
+            m_ObjectArgumentAssemblyTypeName: Trash.Spawning.SpawnChances, Assembly-CSharp
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    OnNightEnded:
+      m_PersistentCalls:
+        m_Calls: []
+  - Day: 5
+    Night: 5
+    OnDayStarted:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 6816584641351622993}
+          m_MethodName: SetChances
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 11400000, guid: c06acbc4812561749805be69e07405df,
+              type: 2}
+            m_ObjectArgumentAssemblyTypeName: Trash.Spawning.SpawnChances, Assembly-CSharp
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    OnDayEnded:
+      m_PersistentCalls:
+        m_Calls: []
+    OnNightStarted:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 6816584641351622993}
+          m_MethodName: SetChances
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 11400000, guid: 66904d16e9dad314e9ad4a39a20b0074,
+              type: 2}
+            m_ObjectArgumentAssemblyTypeName: Trash.Spawning.SpawnChances, Assembly-CSharp
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    OnNightEnded:
+      m_PersistentCalls:
+        m_Calls: []
+  - Day: 6
+    Night: 6
+    OnDayStarted:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 6816584641351622993}
+          m_MethodName: SetChances
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 11400000, guid: d6745bbf22b627949b14849126e3743e,
+              type: 2}
+            m_ObjectArgumentAssemblyTypeName: Trash.Spawning.SpawnChances, Assembly-CSharp
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    OnDayEnded:
+      m_PersistentCalls:
+        m_Calls: []
+    OnNightStarted:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 6816584641351622993}
+          m_MethodName: SetChances
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 11400000, guid: 17d26a5f58f9d6544ba7b121ccd4de04,
+              type: 2}
+            m_ObjectArgumentAssemblyTypeName: Trash.Spawning.SpawnChances, Assembly-CSharp
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    OnNightEnded:
+      m_PersistentCalls:
+        m_Calls: []
+  - Day: 7
+    Night: 7
+    OnDayStarted:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 6816584641351622993}
+          m_MethodName: SetChances
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 11400000, guid: 57dde1dc361967a41abeb15e400ef10a,
+              type: 2}
+            m_ObjectArgumentAssemblyTypeName: Trash.Spawning.SpawnChances, Assembly-CSharp
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    OnDayEnded:
+      m_PersistentCalls:
+        m_Calls: []
+    OnNightStarted:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 6816584641351622993}
+          m_MethodName: SetChances
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 11400000, guid: 0f6ec4b15c52d234da8cbbecafb74730,
+              type: 2}
+            m_ObjectArgumentAssemblyTypeName: Trash.Spawning.SpawnChances, Assembly-CSharp
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    OnNightEnded:
+      m_PersistentCalls:
+        m_Calls: []
+--- !u!114 &2953995416725455012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6816584641351622996}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4a6c8757987a3942a7dd085574bdc0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  money: 100
+  m_threshold: -10000
+  OnMoneyLoss:
+    m_PersistentCalls:
+      m_Calls: []
+  OnMoneyGain:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &3387302579319657968
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6816584641351622996}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 836a2068913343f458702fae5fa4a008, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gregText: {fileID: 0}
+  gregTextParentObject: {fileID: 0}
+  greg: {fileID: 0}
+  buildMenu: {fileID: 0}
+  start1: StartText1
+  start2: StartText2
+  morningTexts:
+  - Morning 1
+  - Morning 2
+  - Morning 3

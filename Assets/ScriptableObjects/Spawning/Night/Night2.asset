@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06d3527b1a854481aea41a1957e14092, type: 3}
+  m_Name: Night2
+  m_EditorClassIdentifier: 
+  StackSpawnChancePerSecond: 0.2
+  StackSizeChances:
+  - StackSize: 1
+    ChanceStart: 0
+    ChanceEnd: 1
+  TypeSpawnChances:
+  - Type: {fileID: 11400000, guid: 2d1854ec4047fb24c863791d67eb30c2, type: 2}
+    ChanceStart: 0
+    ChanceEnd: 0.33
+  - Type: {fileID: 11400000, guid: d9fd99370baebc2438a3a578abc8a6b9, type: 2}
+    ChanceStart: 0.33
+    ChanceEnd: 0.66
+  - Type: {fileID: 11400000, guid: fa93cd413ff357646a8d10167a1e181f, type: 2}
+    ChanceStart: 0.66
+    ChanceEnd: 1

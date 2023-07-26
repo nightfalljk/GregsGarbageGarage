@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8791552345916373155
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8791552345916373153}
+  - component: {fileID: 8791552345916373152}
+  m_Layer: 0
+  m_Name: BuildManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8791552345916373153
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8791552345916373155}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.25744295, y: -0.13576984, z: -0.5233278}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8791552345916373152
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8791552345916373155}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9317b616e422eeb47815476592efdadb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gridSize: 11
+  mainCam: {fileID: 0}
+  cellSize: 1
+  origin: {x: 0, y: 0, z: 0}
+  buildPlanePrefab: {fileID: 6863275787105718316, guid: 6fa950e3fbc0844419edc43750cc839f,
+    type: 3}
+  colliding:
+    serializedVersion: 2
+    m_Bits: 512
+  SpawnerPrefab: {fileID: 0}
+  DestroyerPrefab: {fileID: 579490533050571622, guid: 327e12494f60546438d953597c53babb,
+    type: 3}
+  allow: {fileID: 2100000, guid: 3ab1edf3d8781954b95b054127607297, type: 2}
+  notAllow: {fileID: 2100000, guid: a9d8f454a39d60644b35292bfe0a8f16, type: 2}
+  normal: {fileID: 2100000, guid: 8a737fa8cecdf2e4b99f1f3083d57d2b, type: 2}
+  blueprints:
+  - {fileID: 2980877258689041304, guid: f1a8dcb353a76a7458036655349192ba, type: 3}
+  - {fileID: 5873350277836854325, guid: c6a65563428266d4ca1e67c88f9207a0, type: 3}
+  - {fileID: 2346995844910087491, guid: 0a4a9579175807848b6870e36221df6c, type: 3}
+  selectPrefab: 0
